@@ -14,7 +14,7 @@ public class WebClientGetFluxProduto {
 		List<ProdutoDTO> listaProduto = new ArrayList<>();
 		
 		
-	Flux<ProdutoDTO> fluxProduto = WebClient.create("http://localhost:54014")
+	Flux<ProdutoDTO> fluxProduto = WebClient.create("http://localhost:8080")
 		.get()
 		.uri("/produto")
 		.retrieve()

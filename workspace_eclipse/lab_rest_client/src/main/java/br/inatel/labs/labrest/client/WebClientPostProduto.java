@@ -13,7 +13,7 @@ public class WebClientPostProduto {
 		novoProduto.setDescricao( "Martelo"); 
 		novoProduto.setPreco( new BigDecimal(25.00) );
 
-		ProdutoDTO produtoCriado = WebClient.create("http://localhost:54014").post()
+		ProdutoDTO produtoCriado = WebClient.create("http://localhost:8080").post()
 		. uri("/produto")
 		. bodyValue(novoProduto)
 		. retrieve()
